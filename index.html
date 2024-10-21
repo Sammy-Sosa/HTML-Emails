@@ -3,12 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J.O. Agency Emails</title>
+    <title>HTML Emails</title>
     <style>
+    
+      		.no-link-style {
+            text-decoration: none; /* Removes the underline */
+            color: inherit; /* Inherits the text color from the parent element */
+        }
+        
+    	      .JO {
+        	font-size:12px;
+            color:#00b5cc;
+        
+        }
+    
+    	
         body {
             margin: 0;
             font-family: Helvetica, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f7f7f7;
         }
 
         .container {
@@ -19,11 +32,17 @@
             height: 100vh;
             padding: 20px;
         }
+        
+        .button-container {
+            display: flex; /* Enables flexbox layout */
+            justify-content: center; /* Center the buttons horizontally */
+            gap: 10px; /* Adds space between the buttons */
+        }
 
         h1 {
             font-size: 32px;
             font-weight: bold;
-            margin-bottom: 40px;
+            color:#012B55;
         }
 
         .preview {
@@ -38,6 +57,7 @@
             max-width: 600px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+        
         }
 
         .preview iframe {
@@ -50,7 +70,7 @@
         }
 
         .preview button {
-            background-color: #0073e6;
+            background-color: #012B55;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -60,7 +80,7 @@
         }
 
         .preview button:hover {
-            background-color: #005bb5;
+            background-color: #004A87;
         }
 
         @media (max-width: 768px) {
@@ -73,11 +93,38 @@
 <body>
 
     <div class="container">
-        <h1>J.O. Agency Emails</h1>
-        <div class="preview">
-            <!-- Email preview iframe -->
-            <iframe src="F1-ITTracker.html"></iframe>
+        <h1 style="margin-bottom:50px; margin-top:100px;">HTML Emails</h1>
+        <div class="preview" style="margin-bottom:50px;">
+        	<p style="width:80%;">
+            <b>Welcome to my collection of HTML projects</b> <br><br>My name is Sammy Sosa, and a service I offer is basic HTML email coding - below are some examples of what I have produced and some relevant links. 
+            </p>
         </div>
+        
+        <!-- Email preview iframe -->
+        <div class="preview"style="margin-bottom:50px;">
+            
+            <h1>F1 IT</h1>
+            
+            <iframe src="F1-ITTracker.html" style="margin-bottom:20px;"></iframe>
+            
+            <p style="width:80%;">F1 IT needed a series of emails to replace their default service emails due to elevated levels of poor client feedback.</p>
+            <p class="JO">Made for J.O. Agency</p>
+        </div>
+        <!-- Email preview iframe -->
+        
+        
+        <div class="preview">
+            <div class="button-container">
+         	<button onclick="window.location.href='https://samuelsosa.net/'">
+                Back to Portfolio
+            </button>
+            
+            <button onclick="window.location.href='https://github.com/Sammy-Sosa/sammydoeshtml.github.io'">
+                Github Repository
+            </button>
+            </div>
+         </div>
+         <p style="color:#b7b7b7; padding-top:10px; padding-bottom:20px;"><a href="https://samuelsosa.net/" class="no-link-style">samuelsosa.net</a></p>
     </div>
 
 </body>
