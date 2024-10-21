@@ -20,13 +20,12 @@
             border: 1px solid #dddddd;
             padding: 20px; /* Add padding for spacing */
             box-sizing: border-box; /* Include padding and border in the width calculation */
-            height: auto; /* Allow height to adjust based on content */
             overflow: hidden; /* Prevent scrolling */
         }
         .header, .footer {
             padding: 20px;
             text-align: center;
-            background-color: b7b7b7;
+            background-color: #b7b7b7; /* Corrected hex color code */
             color: #ffffff;
         }
         .content {
@@ -40,68 +39,57 @@
         }
         .button {
             display: inline-block;
-            padding:  30px 60px;
+            padding: 30px 60px;
             background-color: #1c98d5;
             color: #ffffff;
             text-decoration: none;
-            text-transform:uppercase;
-            font-weight:700;
-            line-height:normal;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: normal;
         }
     </style>
 </head>
 <body>
 
-    <body style="margin: 0; padding: 0; background-color: #f0f0f0;">
+    <!-- Outer wrapper table to create a margin effect -->
+    <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f4f4f4; padding: 20px;">
+        <tr>
+            <td align="center">
+                <!-- Inner wrapper table for email content -->
+                <table width="600" cellpadding="0" cellspacing="0" style="background-color: #ffffff; border: 1px solid #dddddd;">
+                    <tr>
+                        <td class="container">
+                            <p><a href="https://joagency.com/" style="color: #3498db; text-decoration: underline;" target="_blank"><img align="center" alt="Logo" src="https://i.postimg.cc/1XjkbrVs/Logo.png" style="border: none; max-width: 100%;" /></a></p>
+                            <p><a href="https://joagency.com/" style="color: #3498db; text-decoration: underline;" target="_blank"><img align="center" alt="Logo" class="centered-image" src="https://i.postimg.cc/VLYhYTWv/Waiting.png" style="border: none; max-width: 100%;" /></a></p>
 
-        <!-- Outer wrapper table to create a margin effect -->
-        <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #b7b7b7; padding: 20px;">
-            <tr>
-                <td align="center">
-                    <!-- Inner wrapper table for email content -->
-                    <table width="700" cellpadding="20" cellspacing="0"  style="background-color: #ffffff;">
+                            <p style="text-align:center; font-family: Helvetica, sans-serif; font-size: 50px; margin: 10px 0 40px; background-color: #003349; padding: 25px; color: #ffffff;"><b>Pending Closure</b></p>
+
+                            <p style="font-family: Helvetica, sans-serif; font-size: 25px; color: #003349;">We are waiting on a response from you about ticket <br><b>#[srnumber]</b>. <br><br>If there is no response within 24 hours, the ticket will be closed. <br><br><b>Please make sure you click “reply to all” in your email so that we get the email correctly.</b></p>
+
+                            <p style="font-family: Helvetica, sans-serif; font-size: 20px; background-color: #1b98d5; padding: 15px; color: #ffffff; text-align:center;"> &darr; TICKET NUMBER & JOB STATUS &darr;</p>
+                            <p style="font-family: Helvetica, sans-serif; font-size: 25px; color: #003349;">Details</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="footer" style="clear: both; margin-top: 20px; text-align: center; width: 100%;">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; width: 100%; margin-top: 20px;">
                         <tr>
-                            <td>
-    <tr>
-        <td class="wrapper" style="font-family: Helvetica, sans-serif; font-size: 16px; vertical-align: top; box-sizing: border-box; padding: 24px;" valign="top">
-          <p><a href="https://joagency.com/" style="color: #3498db; text-decoration: underline;" target="_blank"><img align="center" alt="Logo" src="https://i.postimg.cc/1XjkbrVs/Logo.png" style="border: none; -ms-interpolation-mode: bicubic; max-width: 100%;" /></a></p>
-          <p><a href="https://joagency.com/" style="color: #3498db; text-decoration: underline;" target="_blank"><img align="center" alt="Logo" class="centered-image" src="https://i.postimg.cc/VLYhYTWv/Waiting.png" style="border: none; -ms-interpolation-mode: bicubic; max-width: 100%; " /></a></p>
+                            <td class="content-block" style="font-family: Helvetica, sans-serif; color: #ffffff; font-size: 16px; text-align: center;">
+                                <span class="apple-link" style="color: #ffffff;">TICKET NUMBER: 20</span><br> CURRENT JOB STATUS: ON-TIME
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="content-block powered-by" style="font-family: Helvetica, sans-serif; color: #ffffff; font-size: 16px; text-align: center; padding-bottom: 50px;">
+                                SUMMARY OF REQUEST: PWD CHANGE
+                            </td>
+                        </tr>
+                    </table>
+                </div>
 
-
-<p style="text-align:center; font-family: Helvetica, sans-serif; font-size:50px; margin-top:10px; margin-bottom:40px; background-color:#003349; padding: 25px; color:#ffffff;"><b>Pending Closure</p>
-
-          <p style="font-family: Helvetica, sans-serif; font-size: 25px; font-weight: normal; margin-bottom:0px; color:#003349;">We are waiting on a response from you about ticket <br><b>#[srnumber]</b>. <br><br>If there is no response within 24 hours the ticket will be closed. <br><br><b>Please make sure you click “reply to all” in your email so that we get the email correctly.”</b></p>
-          
-
-          <p style="font-family: Helvetica, sans-serif; font-size: 20px; font-weight: normal; margin: 0; margin-bottom: 16px; margin-top:20px ; background-color:#1b98d5; padding: 15px; color:#ffffff; text-align:center;"> &darr; TICKET NUMBER & JOB STATUS &darr;
-          </p>
-          <p style="font-family: Helvetica, sans-serif; font-size: 25px; font-weight: normal; margin-bottom:0px; color:#003349;" >Details </p>
-        </td>
-        
-      </tr>
-
-      <div class="footer" style="clear: both; margin-top:20px; text-align: center; width: 100%;">
-        <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; margin-top:20px;" width="100%">
-          <tr>
-            <td class="content-block" style="font-family: Helvetica, sans-serif; vertical-align: top; color: #ffffff; font-size: 16px; text-align: center;" valign="top" align="center">
-              <span class="apple-link" style="color: #ffffff; font-size: 16px; text-align: center;">TICKET NUMBER: 20</span>
-              <br> CURRENT JOB STATUS: ON-TIME
             </td>
-          </tr>
-          <tr>
-            <td class="content-block powered-by" style="font-family: Helvetica, sans-serif; vertical-align: top; color: #ffffff; font-size: 16px; text-align: center; padding-bottom:50px;" valign="top" align="center">
-              SUMMARY OF REQUEST: PWD CHANGE
-            </td>
-          </tr>
-        </table>
-      </div>
-
-    </td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
+        </tr>
+    </table>
 
 </body>
 </html>
